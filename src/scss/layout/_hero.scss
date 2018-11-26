@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-	text-align: center;
+  text-align: center;
     padding-top: 40px;
 }
 
@@ -9,76 +9,83 @@
 }
 
 .hero-illustration {
-	position: relative;
+  position: relative;
     margin-top: 124px;
     padding-bottom: 124px;
 }
 
 .hero-media {
-	position: relative; /* To display all elements above the background color */
+  position: relative; /* To display all elements above the background color */
+  img,
+  svg {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    overflow: visible;
+  }
 
-	img,
-	svg {
-		width: 100%;
-		max-width: 320px;
-		height: auto;
-		margin: 0 auto;
-		overflow: visible;
-	}
+  iframe {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .hero-shapes {
     position: absolute;
     top: -76px;
-	right: calc(50% - 264px);
+  right: calc(50% - 264px);
 
-	svg {
-		width: 395px;
-		height: auto;
-	}
+  svg {
+    width: 395px;
+    height: auto;
+  }
 }
 
 @include media( '>medium' ) {
 
     .hero {
-		text-align: left;
+    text-align: left;
         padding-top: 92px;
         padding-bottom: 92px;
     }
 
-	.hero-inner {
-		/* Split hero in two half */
-		display: flex;
-	}
+  .hero-inner {
+    /* Split hero in two half */
+    display: flex;
+  }
 
-	.hero-copy {
-		padding-right: 48px;
-		min-width: 512px;
-	}
+  .hero-copy {
+    padding-right: 48px;
+    min-width: 512px;
+  }
 
-	.hero-illustration {
-		margin-top: -80px;
-		padding-bottom: 0;
-	}
+  .hero-illustration {
+    margin-top: -80px;
+    padding-bottom: 0;
+  }
 
-	.hero-media {
+  .hero-media {
 
-		img,
-		svg {
-			max-width: none;
-			width: 528px;
-		}
-	}
+    img,
+    svg {
+      max-width: none;
+      width: 528px;
+    }
+  }
 
-	.hero-shapes {
-		top: -168px;
-		right: auto;
-		left: 85px;
+  .hero-shapes {
+    top: -168px;
+    right: auto;
+    left: 85px;
 
-		svg {
-			width: 724px;
-		}
-	}
+    svg {
+      width: 724px;
+    }
+  }
 }
 
 @include media( '>large' ) {
