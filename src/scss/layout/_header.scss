@@ -4,9 +4,16 @@
 }
 
 .header-sun {
-	position: absolute;
-	top: -88px;
-	right: -60px;
+  position: absolute;
+  top: -88px;
+  right: -60px;
+  img {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 70%;
+    height: auto;
+  }
 }
 
 .site-header-inner {
@@ -39,16 +46,16 @@
 
 @include media( '>medium' ) {
 
-	.header-sun {
-		left: 440px;
-		right: auto;
-	}
+  .header-sun {
+    left: 440px;
+    right: auto;
+  }
 }
 
 @include media( '>large' ) {
 
-	.header-sun {
-		left: auto;
-		right: 43%;
-	}
+  .header-sun {
+    left: auto;
+    right: 43%;
+  }
 }
