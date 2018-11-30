@@ -26,6 +26,10 @@
     <meta name="msapplication-square310x310logo" content="dist/images/icon/largetile.png"/>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
 
     <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:400,600,700|Frank+Ruhl+Libre:700" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
@@ -92,8 +96,8 @@
                     <div class="hero-inner">
                         <div class="hero-copy">
                             <h1 class="hero-title mt-0">Creamos aplicaciones <br> a la medida</h1>
-                            <p class="hero-paragraph">Soluciones inteligentes para automatizar y administrar los procesos de tu empresa.</p>
-                            <p class="hero-cta"><a class="button button-primary button-shadow" href="https://wa.me/528118977886?text=Hola,%20me%20interesa%20contratar%20sus%20servicios%20para" target="_blank"><i class="fab fa-whatsapp"></i>&nbsp;&nbsp;Envianos un WhatsApp</a></p>
+                            <p class="hero-paragraph">Soluciones inteligentes para automatizar y gestionar los procesos de tu empresa.</p>
+                            <p class="hero-cta"><a class="button button-success button-shadow" href="https://wa.me/528118977886?text=Hola,%20me%20interesa%20contratar%20sus%20servicios%20para" target="_blank"><i class="fab fa-whatsapp"></i>&nbsp;&nbsp;Envianos un WhatsApp</a></p>
                         </div>
                         <div class="hero-illustration">
                             <div class="hero-shapes is-revealing">
@@ -137,7 +141,7 @@
                 <div class="container">
                     <div class="clients-inner section-inner">
                         <div class="container-sm">
-                            <ul class="list-reset mb-0">
+                            <ul class="list-reset mb-0 slick-clients">
                                 <li>
                                     <a href="https://sharedebread.com/" target="_blank">
                                         <span class="screen-reader-text">Share the Bread</span>
@@ -198,7 +202,7 @@
                         <div class="features-extended-header text-center">
                             <div class="container-sm">
                                 <h2 class="section-title mt-0">Como lo hacemos</h2>
-                                <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+                                <p class="section-paragraph">Nos encargamos de analizar los procesos de tu empresa, para determinar soluciones prácticas que nos permitan transformarlos en sistemas eficaces para atender necesidad específicas.</p>
                             </div>
                         </div>
                         <div class="feature-extended">
@@ -240,8 +244,8 @@
                                 </svg>
                             </div>
                             <div class="feature-extended-body">
-                                <h3 class="mt-0">Discover</h3>
-                                <p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content.</p>
+                                <h3 class="mt-0">Quienes somos</h3>
+                                <p>Somos un equipo de profesionales apasionados por el desarrollo y la tecnología de sistemas interactivos, encargados de optimizar cualquier modelo de negocio para contribuir a su crecimiento.</p>
                             </div>
                         </div>
                         <div class="feature-extended">
@@ -287,8 +291,8 @@
                                 </svg>
                             </div>
                             <div class="feature-extended-body">
-                                <h3 class="mt-0">Discover</h3>
-                                <p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content.</p>
+                                <h3 class="mt-0">Filosofía</h3>
+                                <p>La filosofía de Modulr abraza el concepto Open Source, lo que nos permite colaborar con una amplia comunidad de developers que constantemente están mejorando las aplicaciones y sistemas que hemos desarrollado.</p>
                             </div>
                         </div>
                         <div class="feature-extended">
@@ -321,13 +325,14 @@
                                 </svg>
                             </div>
                             <div class="feature-extended-body">
-                                <h3 class="mt-0">Discover</h3>
-                                <p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content.</p>
+                                <h3 class="mt-0">Metodología</h3>
+                                <p>Nuestro equipo compuesto por desarrolladores y diseñadores está orientado hacia el camino de la mejora continua y la eficiencia.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section class="testimonials section">
                 <div class="container">
                     <div class="testimonials-inner section-inner">
@@ -479,7 +484,17 @@
             </div>
         </footer>
     </div>
-
     <script src="dist/js/main.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.slick-clients').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+    </script>
 </body>
 </html>
